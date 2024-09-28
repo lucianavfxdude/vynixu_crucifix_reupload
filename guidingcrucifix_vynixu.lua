@@ -1,6 +1,6 @@
 ---====== Load module ======---
 
-local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/lucianavfxdude/curiouscrucifix_byvynixu/refs/heads/main/SourceGuiding.lua"))()
+local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/lucianavfxdude/vynixu_crucifix_reupload/refs/heads/main/SourceLua/SourceGuiding.lua"))()
 
 ---====== Create crucifix ======---
 
