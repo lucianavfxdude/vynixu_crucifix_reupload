@@ -1,1 +1,5 @@
-# vynixu_crucifix_reupload
+# Vynixu Crucifix Reupload, a modified version of the Vynixu Crucifix.
+
+this is a reupload of vynixu's updated crucifix script that features guiding light and curious light variants
+
+THE SCRIPT IS JUST MADE BY VYNIXU! IM REUPLOADING AS I MADE A FANMADE CURIOUS LIGHT VARIANT!
