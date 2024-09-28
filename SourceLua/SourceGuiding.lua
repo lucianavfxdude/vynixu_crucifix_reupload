@@ -19,8 +19,8 @@ local localPlayerGui = localPlayer:WaitForChild("PlayerGui")
 local localMouse = localPlayer:GetMouse()
 
 local assets = {
-    Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/curiouscrucifix_byvynixu/blob/main/Repentance.rbxm?raw=true"),
-    Crucifix = LoadCustomInstance("https://github.com/lucianavfxdude/curiouscrucifix_byvynixu/raw/refs/heads/main/ogcrucifix.rbxm")
+    Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/GuidingRepentance.rbxm?raw=true"),
+    Crucifix = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/raw/refs/heads/main/Assets/CrucifixModels/ogcrucifix.rbxm")
 }
 local moduleScripts = {
 	Main_Game = require(localPlayerGui.MainUI.Initiator.Main_Game),
