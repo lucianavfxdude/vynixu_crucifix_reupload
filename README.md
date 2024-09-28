@@ -1,4 +1,4 @@
-# Vynixu Crucifix Reupload, a modified version of the Vynixu Crucifix.
+# Vynixu Crucifix Reupload
 
 this is a reupload of vynixu's updated crucifix script that features guiding light and curious light variants
 
