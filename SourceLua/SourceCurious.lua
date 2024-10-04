@@ -84,6 +84,7 @@ function Crucifix(model, playerTool, config)
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
 	local sound = (config.Resist and crucifix.SoundFail or crucifix.Sound)
+	local warble = repentance.Crucifix.Warble
 	local shaker = moduleScripts.Main_Game.camShaker:StartShake(5, 20, 2, Vector3.new())
 
     -- Repentance setup
@@ -93,6 +94,7 @@ function Crucifix(model, playerTool, config)
     crucifix.BodyPosition.Position = (localCharacter:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
+	warble:Play()
 
     -- Teleport model to repentance entity part
 	task.spawn(function()
