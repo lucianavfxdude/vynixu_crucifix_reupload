@@ -96,7 +96,6 @@ function Crucifix(model, playerTool, config)
 	repentance.Parent = workspace
 	sound:Play()
 	crash:Play()
-	wait(0.1)
 	zipzap:Play()
 
     -- Teleport model to repentance entity part
