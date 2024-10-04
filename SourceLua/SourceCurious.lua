@@ -3,7 +3,6 @@ if Vynixu_Crucifix_Everything then return Vynixu_Crucifix_Everything end
 
 -- Functions.lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
-local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 -- Services
 local TweenService = game:GetService("TweenService")
@@ -180,6 +179,8 @@ function Crucifix(model, playerTool, config)
 				task.wait()
 			end
 		end)
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
 achievementGiver({
     Title = "Evil be Gone",
     Desc = "I banish thee!",
