@@ -94,7 +94,6 @@ function Crucifix(model, playerTool, config)
     crucifix.BodyPosition.Position = (localCharacter:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	wait(0.2)
 	warblesound:Play()
 
     -- Teleport model to repentance entity part
