@@ -86,6 +86,7 @@ function Crucifix(model, playerTool, config)
 	local sound = (config.Resist and crucifix.SoundFail or crucifix.Sound)
 	local crash = repentance.Crucifix.Crash
 	local zipzap = repentance.Crucifix.Assemble
+	local warble = repentance.Crucifix.Warble
 	local shaker = moduleScripts.Main_Game.camShaker:StartShake(5, 20, 2, Vector3.new())
 
     -- Repentance setup
@@ -96,8 +97,8 @@ function Crucifix(model, playerTool, config)
 	repentance.Parent = workspace
 	sound:Play()
 	crash:Play()
-	wait(0.1)
 	zipzap:Play()
+	warble:Play()
 
     -- Teleport model to repentance entity part
 	task.spawn(function()
