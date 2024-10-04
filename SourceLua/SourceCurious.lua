@@ -179,14 +179,8 @@ function Crucifix(model, playerTool, config)
 				task.wait()
 			end
 		end)
-local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
-achievementGiver({
-    Title = "Evil be Gone",
-    Desc = "I banish thee!",
-    Reason = "Use a Crucifix successfully.",
-    Image = "rbxassetid://80831935889923"
-})
+		
 		WaitUntil(sound, 9.625)
 	end
 
