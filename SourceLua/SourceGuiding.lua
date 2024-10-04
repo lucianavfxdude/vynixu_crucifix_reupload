@@ -3,6 +3,7 @@ if Vynixu_Crucifix_Everything then return Vynixu_Crucifix_Everything end
 
 -- Functions.lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 -- Services
 local TweenService = game:GetService("TweenService")
@@ -177,7 +178,12 @@ function Crucifix(model, playerTool, config)
 				task.wait()
 			end
 		end)
-
+achievementGiver({
+    Title = "Evil be Gone",
+    Desc = "I banish thee!",
+    Reason = "Use a Crucifix successfully.",
+    Image = "https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixModels/Images/crucifixbadge.png?raw=true"
+})
 		WaitUntil(sound, 9.625)
 	end
 
