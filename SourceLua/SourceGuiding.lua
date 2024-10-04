@@ -182,7 +182,7 @@ achievementGiver({
     Title = "Evil be Gone",
     Desc = "I banish thee!",
     Reason = "Use a Crucifix successfully.",
-    Image = "https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixModels/Images/crucifixbadge.png?raw=true"
+    Image = "rbxassetid://80831935889923"
 })
 		WaitUntil(sound, 9.625)
 	end
