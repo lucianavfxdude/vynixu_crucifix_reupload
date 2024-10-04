@@ -3,7 +3,6 @@ if Vynixu_Crucifix_Everything then return Vynixu_Crucifix_Everything end
 
 -- Functions.lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
-local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 -- Services
 local TweenService = game:GetService("TweenService")
@@ -20,8 +19,8 @@ local localPlayerGui = localPlayer:WaitForChild("PlayerGui")
 local localMouse = localPlayer:GetMouse()
 
 local assets = {
-    Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/GuidingRepentance.rbxm?raw=true"),
-    Crucifix = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/raw/refs/heads/main/Assets/CrucifixModels/ogcrucifix.rbxm")
+    Repentance = LoadCustomInstance("https://github.com/RegularVynixu/Utilities/blob/main/Doors/Entity%20Spawner/Assets/Repentance.rbxm?raw=true"),
+    Crucifix = LoadCustomInstance("https://github.com/RegularVynixu/Utilities/raw/refs/heads/main/Doors/Item%20Spawner/Assets/Crucifix.rbxm")
 }
 local moduleScripts = {
 	Main_Game = require(localPlayerGui.MainUI.Initiator.Main_Game),
