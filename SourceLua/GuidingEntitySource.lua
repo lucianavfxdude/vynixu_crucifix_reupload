@@ -325,21 +325,31 @@ function CrucifixEntity(entityTable, tool)
 		rushywoah.Attachment.BlackTrail.Enabled = false
 		rushywoah.Attachment.Crucifix.Enabled = false
 		rushywoah.Attachment.Crucifix.Enabled = true
+		rushywoah.Attachment.WeakParticle.Enabled = false
+		rushywoah.Attachment.Black.Enabled = true
 		rushywoah.PlaySound.Volume = 0
 		rushywoah.Footsteps.Volume = 0
 		rushywoah.Repent.Volume = 0.4
 		rushywoah.Repent:Play()
+		wait(0.5)
+		rushywoah.Attachment.Black.Enabled = false
+		rushywoah.Attachment.WeakParticle.Enabled = true
 	else
-		local ambuss = game.workspace.AmbushMoving.RushNew
+		local ambuss = game.workspace.RushMoving.RushNew
 		ambuss.Attachment.ParticleEmitter.Enabled = true
 		ambuss.Attachment.ParticleEmitter.Enabled = false
 		ambuss.Attachment.BlackTrail.Enabled = false
 		ambuss.Attachment.Crucifix.Enabled = false
 		ambuss.Attachment.Crucifix.Enabled = true
+		ambuss.Attachment.WeakParticle.Enabled = false
+		ambuss.Attachment.Black.Enabled = true
 		ambuss.PlaySound.Volume = 0
 		ambuss.Footsteps.Volume = 0
 		ambuss.Repent.Volume = 0.4
 		ambuss.Repent:Play()
+		wait(0.5)
+		ambuss.Attachment.Black.Enabled = false
+		ambuss.Attachment.WeakParticle.Enabled = true
 	end
 
 	task.spawn(function()
