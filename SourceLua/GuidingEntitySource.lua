@@ -294,7 +294,6 @@ function CrucifixEntity(entityTable, tool)
 	local crucifix = repentance.Crucifix
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
-	local rushywoah = game.workspace.RushMoving.RushNew
 	local sound = (config.Crucifixion.Resist and crucifix.SoundFail or crucifix.Sound)
 	local shaker = moduleScripts.Main_Game.camShaker:StartShake(5, 20, 2, Vector3.new())
 
@@ -319,14 +318,25 @@ function CrucifixEntity(entityTable, tool)
     crucifix.BodyPosition.Position = (localChar:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	rushywoah.Attachment.ParticleEmitter.Enabled = true
-	rushywoah.Attachment.ParticleEmitter.Enabled = false
-	rushywoah.Attachment.Crucifix.Enabled = false
-	rushywoah.Attachment.Crucifix.Enabled = true
-	rushywoah.PlaySound.Volume = 0
-	rushywoah.Footsteps.Volume = 0
-	rushywoah.Repent.Volume = 1
-	rushywoah.Repent:Play()
+	if game.workspace.RushMoving.RushNew then
+		local rushywoah = game.workspace.RushMoving.RushNew
+		rushywoah.Attachment.ParticleEmitter.Enabled = true
+		rushywoah.Attachment.ParticleEmitter.Enabled = false
+		rushywoah.Attachment.Crucifix.Enabled = false
+		rushywoah.Attachment.Crucifix.Enabled = true
+		rushywoah.PlaySound.Volume = 0
+		rushywoah.Footsteps.Volume = 0
+		rushywoah.Repent:Play()
+	else
+		local ambuss = game.workspace.AmbushMoving.RushNew
+		ambuss.Attachment.ParticleEmitter.Enabled = true
+		ambuss.Attachment.ParticleEmitter.Enabled = false
+		ambuss.Attachment.Crucifix.Enabled = false
+		ambuss.Attachment.Crucifix.Enabled = true
+		ambuss.PlaySound.Volume = 0
+		ambuss.Footsteps.Volume = 0
+		ambuss.Repent:Play()
+	end
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
