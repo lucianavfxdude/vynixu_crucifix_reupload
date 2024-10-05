@@ -319,7 +319,7 @@ function CrucifixEntity(entityTable, tool)
 	repentance.Parent = workspace
 	sound:Play()
 	if game.workspace.RushMoving.RushNew == true then
-		local rushywoah = game.workspace.RushMoving.RushNew
+		local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
 		rushywoah.Attachment.ParticleEmitter.Enabled = true
 		rushywoah.Attachment.ParticleEmitter.Enabled = false
 		rushywoah.Attachment.BlackTrail.Enabled = false
