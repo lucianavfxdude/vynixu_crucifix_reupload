@@ -322,6 +322,7 @@ function CrucifixEntity(entityTable, tool)
 	rushywoah.Attachment.ParticleEmitter.Enabled = true
 	rushywoah.Attachment.ParticleEmitter.Enabled = false
 	rushywoah.Attachment.BlackTrail.Enabled = false
+	rushywoah.Attachment.BlackSub.Enabled = false
 	rushywoah.Attachment.Crucifix.Enabled = false
 	rushywoah.Attachment.Crucifix.Enabled = true
 	rushywoah.Attachment.WeakParticle.Enabled = false
@@ -333,6 +334,7 @@ function CrucifixEntity(entityTable, tool)
 	wait(0.5)
 	rushywoah.Attachment.Black.Enabled = false
 	rushywoah.Attachment.WeakParticle.Enabled = true
+	rushywoah.Attachment.BlackSub.Enabled = true
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
