@@ -335,7 +335,7 @@ function CrucifixEntity(entityTable, tool)
 		rushywoah.Attachment.Black.Enabled = false
 		rushywoah.Attachment.WeakParticle.Enabled = true
 	else
-		local ambuss = game.workspace.RushMoving.RushNew
+		local ambuss = game.workspace.AmbushMoving.RushNew
 		ambuss.Attachment.ParticleEmitter.Enabled = true
 		ambuss.Attachment.ParticleEmitter.Enabled = false
 		ambuss.Attachment.BlackTrail.Enabled = false
