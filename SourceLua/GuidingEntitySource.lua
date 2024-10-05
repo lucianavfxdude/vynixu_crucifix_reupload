@@ -326,6 +326,7 @@ function CrucifixEntity(entityTable, tool)
 		rushywoah.Attachment.Crucifix.Enabled = true
 		rushywoah.PlaySound.Volume = 0
 		rushywoah.Footsteps.Volume = 0
+		rushywoah.Repent.Volume = 0.4
 		rushywoah.Repent:Play()
 	else
 		local ambuss = game.workspace.AmbushMoving.RushNew
@@ -335,6 +336,7 @@ function CrucifixEntity(entityTable, tool)
 		ambuss.Attachment.Crucifix.Enabled = true
 		ambuss.PlaySound.Volume = 0
 		ambuss.Footsteps.Volume = 0
+		ambuss.Repent.Volume = 0.4
 		ambuss.Repent:Play()
 	end
 
