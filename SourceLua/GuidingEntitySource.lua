@@ -319,11 +319,8 @@ function CrucifixEntity(entityTable, tool)
     crucifix.BodyPosition.Position = (localChar:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	rushywoah.PlaySound:Destroy()
-	rushywoah.Footsteps:Destroy()
-	rushywoah.Kill:Destroy()
-	rushywoah.Knock:Destroy()
-	rushywoah.Scream:Destroy()
+	rushywoah.PlaySound.Volume = 0
+	rushywoah.Footsteps.Volume = 0
 	rushywoah.Repent:Play()
 
 	task.spawn(function()
