@@ -294,6 +294,7 @@ function CrucifixEntity(entityTable, tool)
 	local crucifix = repentance.Crucifix
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
+	local rushywoah = game.workspace.RushMoving.RushNew
 	local sound = (config.Crucifixion.Resist and crucifix.SoundFail or crucifix.Sound)
 	local shaker = moduleScripts.Main_Game.camShaker:StartShake(5, 20, 2, Vector3.new())
 
@@ -318,6 +319,12 @@ function CrucifixEntity(entityTable, tool)
     crucifix.BodyPosition.Position = (localChar:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
+	rushywoah.PlaySound:Destroy()
+	rushywoah.Footsteps:Destroy()
+	rushywoah.Kill:Destroy()
+	rushywoah.Knock:Destroy()
+	rushywoah.Scream:Destroy()
+	rushywoah.Repent:Play()
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
