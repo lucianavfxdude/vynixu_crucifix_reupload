@@ -37,7 +37,7 @@ local vynixuModules = {
 	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
 }
 local assets = {
-	Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/CuriousRepentance.rbxm?raw=true")
+	Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/GuidingRepentance.rbxm?raw=true")
 }
 local moduleScripts = {
 	Module_Events = require(ReplicatedStorage.ClientModules.Module_Events),
@@ -318,7 +318,7 @@ function CrucifixEntity(entityTable, tool)
     crucifix.BodyPosition.Position = (localChar:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	if game.workspace.RushMoving.RushNew then
+	if game.workspace.RushMoving.RushNew == true then
 		local rushywoah = game.workspace.RushMoving.RushNew
 		rushywoah.Attachment.ParticleEmitter.Enabled = true
 		rushywoah.Attachment.ParticleEmitter.Enabled = false
