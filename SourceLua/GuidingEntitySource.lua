@@ -318,7 +318,7 @@ function CrucifixEntity(entityTable, tool)
     crucifix.BodyPosition.Position = (localChar:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	if game.workspace.RushMoving.RushNew then
+	if game.workspace.RushMoving.RushNew == true then
 		local rushywoah = game.workspace.RushMoving.RushNew
 		rushywoah.Attachment.ParticleEmitter.Enabled = true
 		rushywoah.Attachment.ParticleEmitter.Enabled = false
