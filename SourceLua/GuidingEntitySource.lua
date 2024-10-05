@@ -328,7 +328,7 @@ function CrucifixEntity(entityTable, tool)
 	rushywoah.Attachment.Black.Enabled = true
 	rushywoah.PlaySound.Volume = 0
 	rushywoah.Footsteps.Volume = 0
-	rushywoah.Repent.Volume = 0.4
+	rushywoah.Repent.Volume = 0.7
 	rushywoah.Repent:Play()
 	wait(0.5)
 	rushywoah.Attachment.Black.Enabled = false
