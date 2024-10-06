@@ -35,6 +35,7 @@ local colourCurious = Color3.fromRGB(253, 255, 133)
 
 local vynixuModules = {
 	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
+	achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 }
 local assets = {
 	Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/GuidingRepentance.rbxm?raw=true")
@@ -334,6 +335,13 @@ function CrucifixEntity(entityTable, tool)
 	rushywoah.Attachment.Black.Enabled = false
 	rushywoah.Attachment.WeakParticle.Enabled = true
 	rushywoah.Attachment.BlackSub.Enabled = true
+	wait(3.5)
+	achievementGiver({
+    	Title = "Abrupt Stop",
+    	Desc = "I don't care about your marathon!",
+    	Reason = "Use a Crucifix against Jolan.",
+    	Image = "rbxassetid://80831935889923"
+	})
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
