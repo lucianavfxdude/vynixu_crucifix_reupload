@@ -37,7 +37,7 @@ local vynixuModules = {
 	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
 }
 local assets = {
-	Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/GuidingRepentance.rbxm?raw=true")
+	Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/CuriousRepentance.rbxm?raw=true")
 }
 local moduleScripts = {
 	Module_Events = require(ReplicatedStorage.ClientModules.Module_Events),
