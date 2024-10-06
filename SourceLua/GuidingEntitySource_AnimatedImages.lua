@@ -34,7 +34,7 @@ local colourGuiding = Color3.fromRGB(137, 207, 255)
 local colourCurious = Color3.fromRGB(253, 255, 133)
 
 local vynixuModules = {
-	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
+	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))(),
 	achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 }
 local assets = {
