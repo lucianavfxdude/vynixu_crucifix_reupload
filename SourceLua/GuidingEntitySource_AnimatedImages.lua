@@ -273,6 +273,16 @@ function PlayerHasItemEquipped(name)
 	return false
 end
 
+function giveachievement()
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+achievementGiver({
+    Title = "Abrupt Stop",
+    Desc = "Man aren't you fast?",
+    Reason = "Use a Crucifix against Jolan.",
+    Image = "rbxassetid://76477634416098"
+})
+end
+
 function CrucifixEntity(entityTable, tool)
 	local model = entityTable.Model
 	local config = entityTable.Config
@@ -319,7 +329,7 @@ function CrucifixEntity(entityTable, tool)
     crucifix.BodyPosition.Position = (localChar:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
+	local rushywoah = game.workspace.RushMoving.RushNew 
 	rushywoah.Attachment.ParticleEmitter.Enabled = true
 	rushywoah.Attachment.BlackTrail.Enabled = false
 	rushywoah.Attachment.BlackSub.Enabled = false
@@ -331,17 +341,11 @@ function CrucifixEntity(entityTable, tool)
 	rushywoah.Repent.Volume = 0.7
 	rushywoah.Repent:Play()
 	wait(0.5)
-	rushywoah.Attachment.PointLight:Destroy()
 	rushywoah.Attachment.Black.Enabled = false
 	rushywoah.Attachment.WeakParticle.Enabled = true
 	rushywoah.Attachment.BlackSub.Enabled = true
 	wait(3.5)
-	achievementGiver({
-    	Title = "Abrupt Stop",
-    	Desc = "I don't care about your marathon!",
-    	Reason = "Use a Crucifix against Jolan.",
-    	Image = "rbxassetid://76477634416098"
-	})
+	giveachievement()
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
