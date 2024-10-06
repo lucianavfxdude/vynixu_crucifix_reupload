@@ -345,7 +345,6 @@ function CrucifixEntity(entityTable, tool)
 	rushywoah.Attachment.Black.Enabled = false
 	rushywoah.Attachment.WeakParticle.Enabled = true
 	rushywoah.Attachment.BlackSub.Enabled = true
-	giveachievement()
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
@@ -385,6 +384,7 @@ function CrucifixEntity(entityTable, tool)
 			shaker:StartFadeOut(3)
 			fadeOut()
 			TweenService:Create(crucifix.BodyAngularVelocity, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), { AngularVelocity = Vector3.new() }):Play()
+			giveachievement()
 		end
 	end)
 
