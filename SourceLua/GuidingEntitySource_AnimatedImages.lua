@@ -340,7 +340,7 @@ function CrucifixEntity(entityTable, tool)
     	Title = "Abrupt Stop",
     	Desc = "I don't care about your marathon!",
     	Reason = "Use a Crucifix against Jolan.",
-    	Image = "rbxassetid://80831935889923"
+    	Image = "rbxassetid://76477634416098"
 	})
 
 	task.spawn(function()
