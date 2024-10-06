@@ -278,7 +278,7 @@ achievementGiver({
     Title = "Abrupt Stop",
     Desc = "Man aren't you fast?",
     Reason = "Use a Crucifix against Jolan.",
-    Image = "https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixModels/Images/jolan.png?raw=true"
+    Image = "https://cdn.discordapp.com/attachments/1036098810969067572/1292569554303844434/jolan.png?ex=670436b4&is=6702e534&hm=1c18438f546cf6495889d5a3fd282f61f8d6165dc69e1d882fe9b68911794afd&"
 })
 end
 
