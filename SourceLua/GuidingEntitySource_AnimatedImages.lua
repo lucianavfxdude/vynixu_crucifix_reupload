@@ -320,12 +320,9 @@ function CrucifixEntity(entityTable, tool)
 	sound:Play()
 	local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
 	rushywoah.Attachment.ParticleEmitter.Enabled = true
-	rushywoah.Attachment.ParticleEmitter:Destroy()
-	rushywoah.Attachment.ParticleEmitter2:Destroy()
 	rushywoah.Attachment.BlackTrail.Enabled = false
 	rushywoah.Attachment.BlackSub.Enabled = false
 	rushywoah.Attachment.Crucifix.Enabled = false
-	rushywoah.Attachment.Crucifix.Enabled = true
 	rushywoah.Attachment.WeakParticle.Enabled = false
 	rushywoah.Attachment.Black.Enabled = true
 	rushywoah.PlaySound.Volume = 0
