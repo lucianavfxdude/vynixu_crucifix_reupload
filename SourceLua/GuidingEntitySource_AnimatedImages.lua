@@ -344,8 +344,6 @@ function CrucifixEntity(entityTable, tool)
 	rushywoah.Attachment.Black.Enabled = false
 	rushywoah.Attachment.WeakParticle.Enabled = true
 	rushywoah.Attachment.BlackSub.Enabled = true
-	wait(3.5)
-	giveachievement()
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
@@ -370,6 +368,7 @@ function CrucifixEntity(entityTable, tool)
 			Brightness = 11.25,
 			Range = 30
 		}):Play()
+		giveachievement()
 		task.wait(1.5)
 		TweenService:Create(pentagram.Base.LightAttach.LightBright, TweenInfo.new(1.5, Enum.EasingStyle.Circular, Enum.EasingDirection.InOut), {
 			Brightness = 0,
