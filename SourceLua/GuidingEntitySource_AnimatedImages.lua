@@ -354,6 +354,7 @@ function CrucifixEntity(entityTable, tool)
 	end)
 
 	-- Animation
+	giveachievement()
 	TweenService:Create(pentagram.Circle, TweenInfo.new(2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), { CFrame = pentagram.Circle.CFrame - Vector3.new(0, 25, 0) }):Play()
 	TweenService:Create(crucifix.BodyAngularVelocity, TweenInfo.new(4, Enum.EasingStyle.Sine, Enum.EasingDirection.In), { AngularVelocity = Vector3.new(0, 40, 0) }):Play()
 	task.delay(2, pentagram.Circle.Destroy, pentagram.Circle)
@@ -368,7 +369,6 @@ function CrucifixEntity(entityTable, tool)
 			Brightness = 11.25,
 			Range = 30
 		}):Play()
-		giveachievement()
 		task.wait(1.5)
 		TweenService:Create(pentagram.Base.LightAttach.LightBright, TweenInfo.new(1.5, Enum.EasingStyle.Circular, Enum.EasingDirection.InOut), {
 			Brightness = 0,
