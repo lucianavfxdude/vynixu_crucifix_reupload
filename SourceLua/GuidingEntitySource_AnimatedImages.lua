@@ -34,8 +34,7 @@ local colourGuiding = Color3.fromRGB(137, 207, 255)
 local colourCurious = Color3.fromRGB(253, 255, 133)
 
 local vynixuModules = {
-	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))(),
-	achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
 }
 local assets = {
 	Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/GuidingRepentance.rbxm?raw=true")
@@ -329,11 +328,13 @@ function CrucifixEntity(entityTable, tool)
     crucifix.BodyPosition.Position = (localChar:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	local rushywoah = game.workspace.RushMoving.RushNew 
+	local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
 	rushywoah.Attachment.ParticleEmitter.Enabled = true
+	rushywoah.Attachment.ParticleEmitter.Enabled = false
 	rushywoah.Attachment.BlackTrail.Enabled = false
 	rushywoah.Attachment.BlackSub.Enabled = false
 	rushywoah.Attachment.Crucifix.Enabled = false
+	rushywoah.Attachment.Crucifix.Enabled = true
 	rushywoah.Attachment.WeakParticle.Enabled = false
 	rushywoah.Attachment.Black.Enabled = true
 	rushywoah.PlaySound.Volume = 0
@@ -354,7 +355,6 @@ function CrucifixEntity(entityTable, tool)
 	end)
 
 	-- Animation
-	giveachievement()
 	TweenService:Create(pentagram.Circle, TweenInfo.new(2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), { CFrame = pentagram.Circle.CFrame - Vector3.new(0, 25, 0) }):Play()
 	TweenService:Create(crucifix.BodyAngularVelocity, TweenInfo.new(4, Enum.EasingStyle.Sine, Enum.EasingDirection.In), { AngularVelocity = Vector3.new(0, 40, 0) }):Play()
 	task.delay(2, pentagram.Circle.Destroy, pentagram.Circle)
@@ -369,6 +369,7 @@ function CrucifixEntity(entityTable, tool)
 			Brightness = 11.25,
 			Range = 30
 		}):Play()
+		giveachievement()
 		task.wait(1.5)
 		TweenService:Create(pentagram.Base.LightAttach.LightBright, TweenInfo.new(1.5, Enum.EasingStyle.Circular, Enum.EasingDirection.InOut), {
 			Brightness = 0,
