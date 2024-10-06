@@ -330,6 +330,7 @@ function CrucifixEntity(entityTable, tool)
 	rushywoah.Repent.Volume = 0.7
 	rushywoah.Repent:Play()
 	wait(0.5)
+	rushywoah.Attachment.PointLight:Destroy()
 	rushywoah.Attachment.Black.Enabled = false
 	rushywoah.Attachment.WeakParticle.Enabled = true
 	rushywoah.Attachment.BlackSub.Enabled = true
