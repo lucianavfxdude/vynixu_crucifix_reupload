@@ -319,8 +319,8 @@ function CrucifixEntity(entityTable, tool)
 	repentance.Parent = workspace
 	sound:Play()
 	local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
-	rushywoah.PlaySound.Volume = 0
-	rushywoah.Footsteps.Volume = 0
+	rushywoah.Far.Volume = 0
+	rushywoah.Close.Volume = 0
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
