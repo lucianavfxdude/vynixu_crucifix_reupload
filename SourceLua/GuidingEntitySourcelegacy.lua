@@ -321,6 +321,12 @@ function CrucifixEntity(entityTable, tool)
 	local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
 	rushywoah.Far.Volume = 0
 	rushywoah.Close.Volume = 0
+	if rushywoah.Repent == true then
+		rushywoah.Repent.PlayOnRemove = true
+		rushywoah.Repent:Destroy()
+	else
+		print("no repent sound. womp womp")
+	end
 
 	task.spawn(function()
 		while model.Parent and repentance.Parent do
