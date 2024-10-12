@@ -321,10 +321,10 @@ function CrucifixEntity(entityTable, tool)
 	local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
 	rushywoah.Far.Volume = 0
 	rushywoah.Close.Volume = 0
-	if rushywoah.Repent == true then
-		rushywoah.Repent:Play()
-	else
+	if rushywoah.Repent == false then
 		print("no repent sound. womp womp")
+	else
+		rushywoah.Repent:Play()
 	end
 
 	task.spawn(function()
