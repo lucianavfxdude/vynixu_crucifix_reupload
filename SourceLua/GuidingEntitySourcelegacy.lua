@@ -322,8 +322,7 @@ function CrucifixEntity(entityTable, tool)
 	rushywoah.Far.Volume = 0
 	rushywoah.Close.Volume = 0
 	if rushywoah.Repent == true then
-		rushywoah.Repent.PlayOnRemove = true
-		rushywoah.Repent:Destroy()
+		rushywoah.Repent:Play()
 	else
 		print("no repent sound. womp womp")
 	end
