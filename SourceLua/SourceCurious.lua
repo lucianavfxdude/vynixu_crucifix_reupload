@@ -98,6 +98,7 @@ function Crucifix(model, playerTool, config)
 	sound:Play()
 	warble:Play()
 	straytool:Destroy()
+	pentagram.Circle.Anchored = false
 
     -- Teleport model to repentance entity part
 	task.spawn(function()
@@ -112,7 +113,6 @@ function Crucifix(model, playerTool, config)
 	end)
 
 	-- Pentagram animation
-	pentagram.Circle.Anchored = false
 	TweenService:Create(crucifix.BodyAngularVelocity, TweenInfo.new(4, Enum.EasingStyle.Sine, Enum.EasingDirection.In), { AngularVelocity = Vector3.new(0, 40, 0) }):Play()
 	task.delay(2, pentagram.Circle.Destroy, pentagram.Circle)
 
