@@ -84,7 +84,7 @@ function Crucifix(model, playerTool, config)
     local warble = repentance.Crucifix.Warble
     local crash = repentance.Crucifix.Crash
     crash.TimePosition = 0
-    crash.PlaybackSpeed = 0.7
+    crash.PlaybackSpeed = 0.8
     local straycruc = workspace.Crucifix
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
