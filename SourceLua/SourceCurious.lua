@@ -83,6 +83,7 @@ function Crucifix(model, playerTool, config)
 	local crucifix = repentance.Crucifix
     local warble = repentance.Crucifix.Warble
     local crash = repentance.Crucifix.SmallerCrash
+    local straycruc = workspace.Crucifix
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
 	local sound = (config.Resist and crucifix.SoundFail or crucifix.Sound)
@@ -97,6 +98,7 @@ function Crucifix(model, playerTool, config)
 	sound:Play()
     warble:Play()
     crash:Play()
+    straycruc:Destroy()
 
     -- Teleport model to repentance entity part
 	task.spawn(function()
