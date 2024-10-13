@@ -98,6 +98,7 @@ function Crucifix(model, playerTool, config)
 	sound:Play()
 	warble:Play()
 	straytool:Destroy()
+	wait(0.2)
 	pentagram.Circle.Anchored = false
 
     -- Teleport model to repentance entity part
