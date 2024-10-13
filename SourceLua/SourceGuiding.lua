@@ -81,12 +81,11 @@ function Crucifix(model, playerTool, config)
     -- Variables
 	local repentance = assets.Repentance:Clone()
 	local crucifix = repentance.Crucifix
+    local warble = repentance.Crucifix.Warble
+    local crash = repentance.Crucifix.SmallerCrash
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
 	local sound = (config.Resist and crucifix.SoundFail or crucifix.Sound)
-	local crash = repentance.Crucifix.Crash
-	local zipzap = repentance.Crucifix.Assemble
-	local straytool = workspace.Crucifix
 	local shaker = moduleScripts.Main_Game.camShaker:StartShake(5, 20, 2, Vector3.new())
 
     -- Repentance setup
@@ -96,8 +95,7 @@ function Crucifix(model, playerTool, config)
     crucifix.BodyPosition.Position = (localCharacter:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	zipzap:Play()
-	straytool:Destroy()
+    crash:Play()
 
     -- Teleport model to repentance entity part
 	task.spawn(function()
