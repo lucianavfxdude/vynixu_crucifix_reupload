@@ -82,7 +82,8 @@ function Crucifix(model, playerTool, config)
 	local repentance = assets.Repentance:Clone()
 	local crucifix = repentance.Crucifix
     local warble = repentance.Crucifix.Warble
-    local crash = repentance.Crucifix.SmallerCrash
+    local crash = repentance.Crucifix.Crash
+    crash.PlaybackSpeed = 0.7
     local straycruc = workspace.Crucifix
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
@@ -96,7 +97,6 @@ function Crucifix(model, playerTool, config)
     crucifix.BodyPosition.Position = (localCharacter:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-    warble:Play()
     crash:Play()
     straycruc:Destroy()
 
