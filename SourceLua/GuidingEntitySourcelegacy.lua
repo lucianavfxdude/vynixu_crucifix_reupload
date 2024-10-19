@@ -320,7 +320,7 @@ function CrucifixEntity(entityTable, tool)
 	repentance.Parent = workspace
 	sound:Play()
 	-- warble:Play()
-	local rushywoah = c.Name.RushNew
+	local rushywoah = entityModel.RushNew
 	if rushywoah.Repent == false then
 		print("no repent sound. womp womp")
 		rushywoah.Far.Volume = 0
