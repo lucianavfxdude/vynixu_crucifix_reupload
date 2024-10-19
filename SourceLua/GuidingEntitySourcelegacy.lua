@@ -319,7 +319,7 @@ function CrucifixEntity(entityTable, tool)
     crucifix.BodyPosition.Position = (localChar:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-	warble:Play()
+	-- warble:Play()
 	local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
 	if rushywoah.Repent == false then
 		print("no repent sound. womp womp")
