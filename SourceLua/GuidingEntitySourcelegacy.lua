@@ -326,9 +326,13 @@ function CrucifixEntity(entityTable, tool)
 		rushywoah.Far.Volume = 0
 		rushywoah.Close.Volume = 0
 	else
+		rushywoah.Attachment.ParticleEmitter.Enabled = false
+		rushywoah.Attachment.Crucifix.Enabled = true
 		rushywoah.Far.Volume = 0
 		rushywoah.Close.Volume = 0
 		rushywoah.Repent:Play()
+		wait(0.5)
+		rushywoah.Attachment.BlackTrail.Enabled = false
 	end
 
 	task.spawn(function()
