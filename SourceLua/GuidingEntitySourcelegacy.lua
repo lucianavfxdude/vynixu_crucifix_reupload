@@ -326,6 +326,8 @@ function CrucifixEntity(entityTable, tool)
 		rushywoah.Far.Volume = 0
 		rushywoah.Close.Volume = 0
 	else
+		rushywoah.Attachment.Weak.Enabled = true
+		rushywoah.Attachment.BlackTrail.Enabled = false
 		rushywoah.Attachment.Black.Enabled = True
 		rushywoah.Attachment.ParticleEmitter.Enabled = false
 		rushywoah.Attachment.Crucifix.Enabled = true
@@ -334,9 +336,6 @@ function CrucifixEntity(entityTable, tool)
 		rushywoah.Repent:Play()
 		wait(0.5)
 		rushywoah.Attachment.Black.Enabled = false
-		rushywoah.Attachment.BlackTrail.Speed = 1
-		rushywoah.Attachment.BlackTrail.Transparency = 0.94
-		rushywoah.Attachment.BlackTrail.Size = 4
 	end
 
 	task.spawn(function()
