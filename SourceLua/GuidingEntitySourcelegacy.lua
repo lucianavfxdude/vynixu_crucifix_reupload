@@ -321,11 +321,12 @@ function CrucifixEntity(entityTable, tool)
 	sound:Play()
 	warble:Play()
 	local rushywoah = game.workspace.RushMoving.RushNew or game.workspace.AmbushMoving.RushNew
-	rushywoah.Far.Volume = 0
-	rushywoah.Close.Volume = 0
 	if rushywoah.Repent == false then
 		print("no repent sound. womp womp")
+		rushywoah.Far.Volume = 0
+		rushywoah.Close.Volume = 0
 	else
+		print("fak nah im continuing the sounds")
 		rushywoah.Repent:Play()
 	end
 
