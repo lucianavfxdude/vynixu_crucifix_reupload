@@ -55,7 +55,8 @@ function Crucifix(model, playerTool, config)
         config.Uses -= 1
 
         if config.Uses <= 0 then
-            Destroy(playerTool)
+            -- Destroy(playerTool)
+	    print("dn delete")
         end
     end
 
@@ -83,6 +84,8 @@ function Crucifix(model, playerTool, config)
 	local crucifix = repentance.Crucifix
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
+	local straycruc = workspace.Crucifix
+	local playercruc = game.Players.LocalPlayer.Character.Crucifix
 	local sound = (config.Resist and crucifix.SoundFail or crucifix.Sound)
 	local shaker = moduleScripts.Main_Game.camShaker:StartShake(5, 20, 2, Vector3.new())
 
@@ -93,6 +96,9 @@ function Crucifix(model, playerTool, config)
     crucifix.BodyPosition.Position = (localCharacter:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
+	straycruc:Destroy()
+	playercruc:Destroy()
+	
 
     -- Teleport model to repentance entity part
 	task.spawn(function()
