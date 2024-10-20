@@ -22,3 +22,5 @@ COMING SOON:
 -> Curious Light crucifix type
 
 ]]--
+
+firesignal(game.ReplicatedStorage.RemotesFolder.Caption.OnClientEvent, "Hold Q, and press on something!")
