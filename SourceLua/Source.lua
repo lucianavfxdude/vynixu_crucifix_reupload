@@ -206,7 +206,8 @@ end
 
 function Destroy(playerTool)
     vynixu_crucifix_manager.Crucifixes[playerTool] = nil
-    playerTool:Destroy()
+    -- playerTool:Destroy()
+    print("dn delete")
 end
 
 module.GiveCrucifix = function(config)
