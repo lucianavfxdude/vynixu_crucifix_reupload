@@ -8,7 +8,7 @@ module.GiveCrucifix({
     Type = 1,
     Uses = 1, -- nil : infinite uses
     Resist = false,
-    EntitiesOnly = false, -- true : custom entities only
+    EntitiesOnly = nil, -- true : custom entities only
     IgnoreList = {}
 })
 
