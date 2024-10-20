@@ -81,6 +81,7 @@ function Crucifix(model, playerTool, config)
     -- Variables
 	local repentance = assets.Repentance:Clone()
 	local crucifix = repentance.Crucifix
+	local toolstray = game.workspace.Crucifix:Destroy()
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
 	local sound = (config.Resist and crucifix.SoundFail or crucifix.Sound)
