@@ -81,7 +81,6 @@ function Crucifix(model, playerTool, config)
     -- Variables
 	local repentance = assets.Repentance:Clone()
 	local crucifix = repentance.Crucifix
-    local warble = repentance.Crucifix.Warble
     local crash = repentance.Crucifix.SmallerCrash
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
@@ -95,7 +94,7 @@ function Crucifix(model, playerTool, config)
     crucifix.BodyPosition.Position = (localCharacter:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
 	sound:Play()
-    crash:Play()
+	crash:Play()
 
     -- Teleport model to repentance entity part
 	task.spawn(function()
