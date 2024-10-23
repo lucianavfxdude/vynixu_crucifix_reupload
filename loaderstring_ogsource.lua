@@ -1,16 +1,16 @@
----====== Load module ======---
+-- ---====== Load module ======---
 
-local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/lucianavfxdude/vynixu_crucifix_reupload/refs/heads/main/SourceLua/Source.lua"))()
+-- local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/lucianavfxdude/vynixu_crucifix_reupload/refs/heads/main/SourceLua/Source.lua"))()
 
----====== Create crucifix ======---
+-- ---====== Create crucifix ======---
 
-module.GiveCrucifix({
-    Type = 1,
-    Uses = 1, -- nil : infinite uses
-    Resist = false,
-    EntitiesOnly = true, -- true : custom entities only
-    IgnoreList = {}
-})
+-- module.GiveCrucifix({
+--     Type = 1,
+--     Uses = nil, -- nil : infinite uses
+--     Resist = false,
+--     EntitiesOnly = false, -- true : custom entities only
+--     IgnoreList = {}
+-- })
 
 --[[
 
@@ -23,4 +23,9 @@ COMING SOON:
 
 ]]--
 
--- firesignal(game.ReplicatedStorage.RemotesFolder.Caption.OnClientEvent, "Hold Q, and press on something!")
+_G.Uses = 414141414141
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = false
+_G.Variant = "Electric"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
