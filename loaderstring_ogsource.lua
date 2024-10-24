@@ -1,14 +1,14 @@
 ---====== Load module ======---
 
-local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/lucianavfxdude/vynixu_crucifix_reupload/refs/heads/main/SourceLua/Source.lua"))()
+local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/lucianavfxdude/vynixu_crucifix_reupload/refs/heads/main/SourceLua/SourcePlayful.lua"))()
 
 -- -====== Create crucifix ======---
 
 module.GiveCrucifix({
     Type = 1,
-    Uses = 1, -- nil : infinite uses
+    Uses = nil, -- nil : infinite uses
     Resist = false,
-    EntitiesOnly = true, -- true : custom entities only
+    EntitiesOnly = false, -- true : custom entities only
     IgnoreList = {}
 })
 
