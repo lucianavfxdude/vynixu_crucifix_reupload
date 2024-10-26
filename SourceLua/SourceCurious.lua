@@ -20,7 +20,7 @@ local localMouse = localPlayer:GetMouse()
 
 local assets = {
     Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/blob/main/Assets/CrucifixBases/CuriousRepentance.rbxm?raw=true"),
-    Crucifix = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/raw/refs/heads/main/Assets/CrucifixModels/gutcruc.rbxm")
+    Crucifix = LoadCustomInstance("https://github.com/lucianavfxdude/vynixu_crucifix_reupload/raw/refs/heads/main/Assets/CrucifixModels/rippedcrucifix.rbxm")
 }
 local moduleScripts = {
 	Main_Game = require(localPlayerGui.MainUI.Initiator.Main_Game),
