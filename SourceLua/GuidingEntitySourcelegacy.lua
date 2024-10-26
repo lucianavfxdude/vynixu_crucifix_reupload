@@ -292,7 +292,6 @@ function CrucifixEntity(entityTable, tool)
 
 	local repentance = assets.Repentance:Clone()
 	local crucifix = repentance.Crucifix
-	local warble = repentance.Crucifix.Warble
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
 	local sound = (config.Crucifixion.Resist and crucifix.SoundFail or crucifix.Sound)
