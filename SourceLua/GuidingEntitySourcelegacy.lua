@@ -37,7 +37,7 @@ local vynixuModules = {
 	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
 }
 local assets = {
-	Repentance = game:GetObjects(getsynasset("maxdesignrepentance.rbxm"))[1]
+	Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/carplush/blob/main/maxdesignrepentance.rbxm?raw=true")
 }
 local moduleScripts = {
 	Module_Events = require(ReplicatedStorage.ClientModules.Module_Events),
