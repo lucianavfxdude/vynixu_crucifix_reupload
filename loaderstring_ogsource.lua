@@ -7,7 +7,7 @@ local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/lucian
 module.GiveCrucifix({
     Type = 1,
     Uses = nil, -- nil : infinite uses
-    Resist = false,
+    Resist = true,
     EntitiesOnly = false, -- true : custom entities only
     IgnoreList = {}
 })
